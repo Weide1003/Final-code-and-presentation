@@ -134,7 +134,7 @@ public class UpdateView extends JFrame {
         WorkSchedule.setBounds(200, 420, 160, 21);
         contentPane.add(WorkSchedule);
         WorkSchedule.setColumns(10);
-        //保存
+  
         JButton saveBtn = new JButton("Save");
         saveBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -203,7 +203,7 @@ public class UpdateView extends JFrame {
                     JOptionPane.showMessageDialog(contentPane, "Incorrect salary", "System prompt", JOptionPane.WARNING_MESSAGE);
 
                 }finally {
-                    //设置默认薪水
+               
                     s = 1000.0;
                 }
                 if(workSchedule == null || "".equals(workSchedule)){
@@ -237,7 +237,7 @@ public class UpdateView extends JFrame {
         saveBtn.setBounds(151, 500, 74, 23);
         contentPane.add(saveBtn);
 
-        //取消
+     
         JButton cancleBtn = new JButton("Cancel");
         cancleBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
