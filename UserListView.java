@@ -82,7 +82,6 @@ public class UserListView extends JFrame {
         contentPane.add(nameText);
         nameText.setColumns(10);
 
-        //查询按钮
         JButton searchBtn = new JButton("Search");
         searchBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -107,7 +106,7 @@ public class UserListView extends JFrame {
         JButton updateBtn = new JButton("Edit");
         updateBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // 获取选中行
+            
                 int row = table.getSelectedRow();
                 if (row < 0) {
                     JOptionPane.showMessageDialog(contentPane, "Please select a record", "System prompt", JOptionPane.WARNING_MESSAGE);
