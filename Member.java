@@ -35,19 +35,19 @@ public class Member {
         Name = name;
     }
 
-    //成员地位
+
     private String State;
-    //成员居住城市
+
     private String City;
-    //街道
+  
     private String Street;
-    //手机号码
+
     private String PhoneNumber;
-    //邮编
+
     private String ZipCode;
-    //薪水
+
     private Double Salary;
-    //工作表
+
     private String WorkSchedule;
 
     public Integer getId() {
