@@ -22,20 +22,20 @@ public class AddView extends JFrame {
     private JPanel contentPane;
 
     private JTextField FirstName;
-    //成员名
+
     private JTextField SecondName;
     private JTextField State;
-    //成员居住城市
+
     private JTextField City;
-    //街道
+
     private JTextField Street;
-    //手机号码
+
     private JTextField PhoneNumber;
-    //邮编
+
     private JTextField ZipCode;
-    //薪水
+ 
     private JTextField Salary;
-    //工作表
+   
     private JTextField WorkSchedule;
 
 
@@ -135,7 +135,7 @@ public class AddView extends JFrame {
 
 
 
-        //保存
+     
         JButton saveBtn = new JButton("Save");
         saveBtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -205,7 +205,7 @@ public class AddView extends JFrame {
                     JOptionPane.showMessageDialog(contentPane, "Incorrect salary", "System prompt", JOptionPane.WARNING_MESSAGE);
 
                 }finally {
-                    //设置默认薪水
+                    
                     if(s == 0.0)
                     s = 1000.0;
                 }
