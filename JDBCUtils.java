@@ -12,26 +12,26 @@ import java.util.Properties;
 
 public class JDBCUtils {
 
-    //数据库连接地址
+
     public static String URL = "jdbc:mysql://localhost:3306/db_demo?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC";
-    //数据库驱动
+
     public static String DRIVER = "com.mysql.cj.jdbc.Driver";
-    //数据库用户名
+
     public static String USER = "root";
-    //数据库密码
+
     public static String PWD = "root";
 
     /*
-     * 数据库连接
+     *
      */
     public static Connection getConnection()  {
 
 
         Connection con = null;
         try {
-            // 加载驱动
+            
             Class.forName(DRIVER);
-            // 获取连接对象
+           
             con = DriverManager.getConnection(URL, USER, PWD);
         } catch (ClassNotFoundException e) {
 
@@ -44,10 +44,10 @@ public class JDBCUtils {
     }
 
     /**
-     * 关闭连接资源
-     * @param con	连接对象
-     * @param pstmt	预编译对象
-     * @param rs	结果集
+     * 
+     * @param con	
+     * @param pstmt	
+     * @param rs	
      */
     public static void close(Connection con, PreparedStatement pstmt, ResultSet rs) {
 
